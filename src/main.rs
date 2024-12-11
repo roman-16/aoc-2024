@@ -48,14 +48,5 @@ fn main() {
         sum += i * item.parse::<usize>().unwrap_or_default();
     }
 
-    println!(
-        "{:?} {} {:?}",
-        &output_vec[..std::cmp::min(64, output_vec.len())],
-        output_vec
-            .iter()
-            .map(|s| s.as_str())
-            .collect::<Vec<_>>()
-            .join(""),
-        sum
-    );
+    println!("{}", sum);
 }
