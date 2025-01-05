@@ -1,2 +1,2 @@
 start:
-  cargo watch -x run
+  bacon run -- -q

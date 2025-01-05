@@ -24,7 +24,7 @@
       in {
         devShells.default = pkgs.mkShell {
           packages = with pkgs; [
-            cargo-watch
+            bacon
             just
             toolchain
           ];
